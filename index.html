@@ -4,10 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <h1 class="heading">Weather App</h1>
+  <div class="container">
+    
+    <header>
+      <div class="search-box">
+        <input type="text" placeholder="Enter your location" class="search-input js-search-input">
+        <i class="fa-solid fa-magnifying-glass search-icon js-search-icon"></i>
+      </div>
+    </header>
+   
+    <div class="weather-display js-weather-display">  
+      <img src="assets/rain.png" alt="weather-img" class="weather-img js-weather-img">
+      <h1 class="temperature js-temperature"></h1>
+      <p class="js-weather-description"></p>
   
+      <div class="weather-details js-weather-details">
+        <div class="humidity">
+          <i class="fa-sharp fa-solid fa-droplet fa-xl"></i>
+          <div>
+            <p class="js-humidity"></p>
+            <p>Humidity</p>
+          </div>
+        </div>
+  
+        <div class="wind">
+          <i class="fa-solid fa-wind fa-xl"></i>
+          <div>
+            <p class="js-wind"></p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
