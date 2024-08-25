@@ -6,7 +6,7 @@
   <title>Weather App</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="script.js" defer type="module"></script>
 </head>
 <body>
   <h1 class="heading">Weather App</h1>
@@ -18,10 +18,17 @@
         <i class="fa-solid fa-magnifying-glass search-icon js-search-icon"></i>
       </div>
     </header>
-   
+  
+    <!-- error display -->
+    <div class="location-error js-location-error">
+      <img src="" alt="weather-img" class="weather-img js-error-img">
+      <h3 class="js-error-msg"></h3>
+    </div>
+
+    <!-- weather display -->
     <div class="weather-display js-weather-display">  
-      <img src="assets/rain.png" alt="weather-img" class="weather-img js-weather-img">
-      <h1 class="temperature js-temperature"></h1>
+      <img src="" alt="weather-img" class="weather-img js-weather-img">
+      <h1 class="js-temperature"></h1>
       <p class="js-weather-description"></p>
   
       <div class="weather-details js-weather-details">
@@ -42,6 +49,7 @@
         </div>
       </div>
     </div>
+  
   </div>
 </body>
 </html>

@@ -43,7 +43,6 @@ body{
   width: 390px;
   max-width: 100%;
   margin: auto; 
-  margin-bottom: 20px;
 }
  
 .search-input{
@@ -73,6 +72,7 @@ body{
 
 .weather-display{
   display: none;
+  margin-top: 30px;
 }
 
 .weather-img{
@@ -100,6 +100,11 @@ body{
 .wind{
   display: flex;
   align-items: center;
+}
+
+.location-error{
+  display: none;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 390px ) {
